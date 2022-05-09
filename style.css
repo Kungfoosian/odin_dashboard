@@ -1,5 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+:nth-child(even) {
+  background-color: wheat;
+}
+
+:nth-child(odd) {
+  background-color:darkseagreen;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+
+  font-size: 16px;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon {
+  width: 1.5rem;
+  height: auto;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.container .sidebar-container {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.container .sidebar-container nav ul > li {
+  list-style-type: none;
+}
+
+.container .sidebar-container nav ul > li > a {
+  text-decoration: none;
+}
+
+.container .sidebar-container nav#sidebar-top {
+  height: 25%;
+}
+
+.container .sidebar-container nav#sidebar-bottom {
+  height: 12%;
+}
+
+.container .sidebar-container nav#sidebar-top ul,
+.container .sidebar-container nav#sidebar-bottom ul {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
