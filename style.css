@@ -188,8 +188,34 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2, 1fr);
+
 }
 
 .container .content-container .bulletin-container .projects-container {
   grid-row: span 2;
+
+  display: flex;
+  flex-direction: column;
+
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: 1fr; */
+}
+
+.container .content-container .bulletin-container .projects-container > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 20px;
+
+  height: 100%;
+}
+
+.container .content-container .bulletin-container .projects-container > div .project-card {
+  height: 100%;
+  background-color: white;
+  padding: 20px 8px;
+}
+
+.container .content-container .bulletin-container .projects-container h3 {
+  /* grid-column: span 2; */
 }
