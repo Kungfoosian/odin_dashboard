@@ -187,7 +187,7 @@ body {
 .container .content-container .bulletin-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
 
 }
 
@@ -240,4 +240,15 @@ body {
   padding: 20px;
   display: grid;
   gap:20px;
+}
+
+.container .content-container .bulletin-container .trending-container > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .content-container .bulletin-container .trending-container > div > div {
+  display: flex;
 }
