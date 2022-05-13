@@ -183,3 +183,13 @@ body {
     width: 25%;
     font-weight: bold;
 }
+
+.container .content-container .bulletin-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container .content-container .bulletin-container .projects-container {
+  grid-row: span 2;
+}
