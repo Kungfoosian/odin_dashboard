@@ -230,6 +230,14 @@ body {
   gap: 20px;
 }
 
-.container .content-container .bulletin-container .projects-container h3 {
-  /* grid-column: span 2; */
+.container .content-container .bulletin-container .announcement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container .content-container .bulletin-container .announcement-container > div {
+  padding: 20px;
+  display: grid;
+  gap:20px;
 }
